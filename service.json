@@ -1,0 +1,57 @@
+{
+  "name": "ASHS-HarP",
+  "version": "0.1.0",
+  "keywords": [
+    "hippocampus",
+    "dementia",
+    "brain",
+    "mtl",
+    "HarP"
+  ],
+  "shortdesc": "Whole hippocampus and ICV segmentation",
+  "longdesc": "Automatic segmentation of whole hippocampus in T1-weighted MRI scans, using an atlas of older controls, MCI patients and AD patients from ADNI2 study segmented with the harmonized HarP protocol",
+  "citation": "http://blah.blah.blah",
+  "url": "http://ashs.picsl.upenn.edu",
+  "tags": [
+    {
+      "name": "T1-MRI",
+      "type": "AnatomicalImage",
+      "hint": "Roughtly isotropic (e.g., 1x1x1mm^3) T1-weighted MRI scan of the whole brain.",
+      "required": true
+    },
+    {
+      "name": "AC",
+      "type": "PointLandmark",
+      "hint": "Anterior commissure point can be optionally specified to help align the MRI scan to the brain template.",
+      "required": false
+    },
+    {
+      "name": "PC",
+      "type": "PointLandmark",
+      "hint": "Posterior commissure point can be optionally specified to help align the MRI scan to the brain template.",
+      "required": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "corr_mode",
+      "displayname" : "Correction Mode",
+      "hint" : "ASHS offers performs segmentation error correction based on a machine learning algorithm. The 'intensity and shape correction' mode is suitable when your data closely matches the intensity characteristics of the ASHS atlas (see paper for details). Otherwise , 'shape correction' is recommended. You may also choose to disable error correction.",
+      "type" : "choose_one",
+      "choices" : [
+        {
+          "name" : "none",
+          "displayname" : "No error correction"
+        },
+        {
+          "name" : "shape",
+          "displayname" : "Shape correction"
+        },
+        {
+          "name" : "intensity",
+          "displayname" : "Intensity correction"
+        }
+        ]
+    }
+  ]
+}
