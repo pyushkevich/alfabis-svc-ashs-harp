@@ -1,6 +1,6 @@
 {
   "name": "ASHS-HarP",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "hippocampus",
     "dementia",
@@ -9,13 +9,13 @@
     "HarP"
   ],
   "shortdesc": "Whole hippocampus and ICV segmentation",
-  "longdesc": "Automatic segmentation of whole hippocampus in T1-weighted MRI scans, using an atlas of older controls, MCI patients and AD patients from ADNI2 study segmented with the harmonized HarP protocol",
+  "longdesc": "Automatic segmentation of whole hippocampus in T1-weighted MRI scans, using a multi-atlas algorithm with an atlas of older controls, MCI patients and AD patients from ADNI2 study segmented with the harmonized HarP protocol. The pipeline also computes the intracranial volume using a multi-atlas algorithm with atlases derived from MRI/CT scan pairs.",
   "citation": "http://blah.blah.blah",
   "url": "http://ashs.picsl.upenn.edu",
   "tags": [
     {
-      "name": "T1-MRI",
-      "type": "AnatomicalImage",
+      "name": "T1",
+      "type": "MainImage",
       "hint": "Roughtly isotropic (e.g., 1x1x1mm^3) T1-weighted MRI scan of the whole brain.",
       "required": true
     },
