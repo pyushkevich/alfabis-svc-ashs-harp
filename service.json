@@ -1,6 +1,6 @@
 {
   "name": "ASHS-HarP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "hippocampus",
     "dementia",
@@ -14,22 +14,10 @@
   "url": "http://ashs.picsl.upenn.edu",
   "tags": [
     {
-      "name": "T1",
+      "name": "T1-MRI",
       "type": "MainImage",
       "hint": "Roughtly isotropic (e.g., 1x1x1mm^3) T1-weighted MRI scan of the whole brain.",
       "required": true
-    },
-    {
-      "name": "AC",
-      "type": "PointLandmark",
-      "hint": "Anterior commissure point can be optionally specified to help align the MRI scan to the brain template.",
-      "required": false
-    },
-    {
-      "name": "PC",
-      "type": "PointLandmark",
-      "hint": "Posterior commissure point can be optionally specified to help align the MRI scan to the brain template.",
-      "required": false
     }
   ],
   "parameters": [
