@@ -14,7 +14,7 @@
   "url": "http://ashs.picsl.upenn.edu",
   "tags": [
     {
-      "name": "T1-MRI",
+      "name": "T1",
       "type": "MainImage",
       "hint": "Roughtly isotropic (e.g., 1x1x1mm^3) T1-weighted MRI scan of the whole brain.",
       "required": true
